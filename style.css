@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: column; 
+}
+
+header {
+    position: fixed;
+    width: 85%;
+    background-color: red;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 10;
+}
+
+h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+main {
+    margin-left: 15%;
+    width: 85%;
+}
+
+button{
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    background-color: goldenrod;
+}
+
+#jumpMenu{
+    margin: 0;
+    display: none;
+    background-color: goldenrod;
+}
+
+
+#jumpMenu a:hover{
+    background-color: blue;
+    color: white;
+}
+
+#recentArticles:hover + #jumpMenu, #jumpMenu:hover{
+    display: block;
+}
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+article{
+    color: lightgray;
+    width: 300px;
+    padding: 15px;
+    transition: font-size 2s, color 2s;
+}
+
+article:hover{
+    font-size: 20px;
+    color: black;
+    
+}
+
+article p:first-of-type::first-letter{
+    font-size: 36px;
+    font-family: "Times New Roman";
+
+}
+
+article p:last-child::after{
+    content: url(arrow.png);
+}
+
+#thanks{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: aliceblue;
+    padding: 10px 15px;
+}
+
+
+
